@@ -54,8 +54,9 @@ function addNewItem(e) {
 //Eleman Silme
 
 function deleteItem(e) {
-    if (confirm("Silmek İstediğinize Emin Misiniz?")) {
+    
         if (e.target.className === "fas fa-times") {
+            if (confirm("Silmek İstediğinize Emin Misiniz?")) {
             //console.log(e.target);
             e.target.parentElement.parentElement.remove();
         }
